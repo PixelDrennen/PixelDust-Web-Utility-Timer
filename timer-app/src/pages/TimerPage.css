@@ -1,0 +1,146 @@
+/* Container for the whole timer */
+.timer-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, sans-serif;
+	padding: 20px;
+	box-sizing: border-box;
+	flex-shrink: 1;
+	flex-grow: 0;
+	align-items: center;
+	margin: 0;
+	gap:0;
+}
+
+/* Timer title header */
+.timer-header {
+	font-size: 2.5rem;
+	text-align: center;
+	margin: 0;
+	padding:0;
+}
+
+/* Main controls container (minutes, seconds, etc.) */
+.time-controls {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 4rem;
+	gap: 0px;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+.pFinishTime{
+	margin:0;
+	padding-bottom: 3px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* Each control group (buttons and input fields) */
+.control-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	gap: 0;
+	justify-content: center;
+}
+
+/* Buttons for minute/second adjustments */
+.control-button {
+	border: none;
+	background: none;
+	font-size: 3rem;
+	cursor: pointer;
+	margin-bottom: 5px;
+	color: #444;
+	gap: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.control-button:hover {
+	color: white;
+}
+
+/* Input fields for minutes and seconds */
+.time-input {
+	width: 80px;
+	/* height: 80px; */
+	min-width: 60px;
+	max-width: 120px;
+	font-size: 3rem;
+	vertical-align: center;
+
+	text-align: center;
+	border: none;
+	margin-bottom: 20px;
+	background: transparent;
+	/* Ensure the background is invisible */
+	outline: none;
+	color: #ffffff;
+	/* Set text color to match the buttons */
+	gap: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/* Container for action buttons (Start / Reset) */
+.action-buttons {
+	/* margin-top: 40px; */
+	display: flex;
+	gap: 0px;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+/* Start button style */
+.btn-start {
+	font-size: 1.25rem;
+	padding: 10px 20px;
+	border-radius: 5px;
+	min-width: 150px;
+	text-align: center;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	border: 2px solid #444;
+	/* Consistent border color */
+	background-color: transparent;
+	color: #5FA8D3;
+	margin: 0;
+}
+
+.btn-start:hover {
+	background-color: #f1f1f1;
+	/* Light background on hover */
+}
+
+/* Reset button style */
+.btn-reset {
+	font-size: 1.25rem;
+	padding: 10px 20px;
+	border-radius: 5px;
+	min-width: 150px;
+	text-align: center;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	border: 2px solid #444;
+	/* Consistent border color */
+	background-color: transparent;
+	color: #444;
+}
+
+.btn-reset:hover {
+	background-color: #f1f1f1;
+	/* Light background on hover */
+}
